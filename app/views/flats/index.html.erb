@@ -1,0 +1,14 @@
+<h2>Simple Airbnb</h2>
+<p>here will be a link to create new flat !!</p>
+<h1>All our Flats (<% @flats.count %>)</h1>
+<ul>
+<% @flats.each do |flat| %>
+  <li class="card">
+    <h2><% flat.name %></h2>
+    <p><% flat.address %></p>
+    <p><% flat.price_per_night %></p>
+    <p><% flat.number_of_guests %></p>
+<!--  <%= link_to 'More info', flat %> -->
+  </li>
+<% end %>
+</ul>
